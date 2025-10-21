@@ -198,6 +198,7 @@ HAL_StatusTypeDef ad5761r_software_data_reset(ad5761r_dev *dev);
 /* Software full reset. */
 HAL_StatusTypeDef ad5761r_software_full_reset(ad5761r_dev *dev);
 uint16_t volts_to_code(const ad5761r_dev *dev, float v);
+float code_to_volts(const ad5761r_dev *dev, uint16_t code);
 
 #ifdef __cplusplus
 }
